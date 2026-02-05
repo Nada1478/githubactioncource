@@ -1,5 +1,9 @@
 on:
   workflow_dispatch:
+    inputs:
+      environment:
+        description: "choose your env"
+        
 jobs:
   deploy:
     runs-on: ubuntu:latest
