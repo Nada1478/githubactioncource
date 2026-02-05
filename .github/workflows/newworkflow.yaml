@@ -1,0 +1,18 @@
+name: "new workflow"
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "src/**" # Removed the leading slash
+
+jobs:
+  new:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4 # v4 is the current stable version
+
+      - name: list repo
+        run: ls -la
