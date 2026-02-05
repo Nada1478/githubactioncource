@@ -11,3 +11,6 @@ jobs:
     steps:
       - name: welcome hello message
         run: echo "welcome to first workflow"
+
+      - name: checkout
+        uses: actions/checkout@v6.0.2
